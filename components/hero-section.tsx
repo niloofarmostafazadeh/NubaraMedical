@@ -19,7 +19,7 @@ export function HeroSection({
 }: HeroSectionProps) {
   return (
     <section
-      className={`relative overflow-hidden bg-gradient-to-br from-secondary via-background to-muted py-20 lg:py-28 ${className}`}
+      className={`relative overflow-hidden bg-linear-to-br from-secondary via-background to-muted py-20 lg:py-28 ${className}`}
     >
       {/* Decorative Elements */}
       <div className="pointer-events-none absolute inset-0 overflow-hidden">

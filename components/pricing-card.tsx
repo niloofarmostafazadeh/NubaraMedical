@@ -19,7 +19,7 @@ export function PricingCard({
   features,
   popular = false,
   ctaText = "Get Quote",
-  ctaHref = "https://wa.me/447888888888",
+  ctaHref = "https://wa.me/905013543732",
 }: PricingCardProps) {
   return (
     <Card className={`relative flex flex-col ${popular ? "border-primary shadow-lg" : ""}`}>
