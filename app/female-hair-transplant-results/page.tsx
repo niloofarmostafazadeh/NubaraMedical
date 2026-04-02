@@ -17,8 +17,8 @@ const results = {
     {
       title: "Frontal Hairline Restoration",
       description: "Significant improvement in hairline density and shape using DHI technique.",
-      beforeImage: "/images/results/hairline-1-before.jpg",
-      afterImage: "/images/results/hairline-1-after.jpg",
+      beforeImage: "/images/hairline-1-before.jpg",
+      afterImage: "/images/hairline-1-after.jpg",
       technique: "DHI" as const,
       grafts: 2200,
       timeframe: "12 months",
