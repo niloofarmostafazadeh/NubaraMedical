@@ -18,7 +18,7 @@ const clinics = [
     name: "Clinica Europa",
     location: "Istanbul, Sisli",
     description: "Leading hair transplant clinic specializing in female hair restoration. State-of-the-art facilities with over 15,000 procedures performed.",
-    image: "/images/clinics/clinica-europa.jpg",
+    image: "/images/clinic-1.jpg",
     rating: 4.9,
     specialties: ["DHI", "Sapphire FUE", "Female Hairline"],
     patientsServed: "8,000+",
