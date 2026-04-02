@@ -121,7 +121,7 @@ export function Header() {
         <div className="flex items-center gap-3">
           <Button asChild className="hidden sm:inline-flex" size="sm">
             <a
-              href="https://wa.me/905488574996"
+              href="https://wa.me/905013543732"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -167,7 +167,7 @@ export function Header() {
                 <div className="flex flex-col gap-2 pt-4">
                   <Button asChild>
                     <a
-                      href="https://wa.me/905488574996"
+                      href="https://wa.me/905013543732"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
