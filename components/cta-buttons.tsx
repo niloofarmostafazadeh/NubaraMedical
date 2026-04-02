@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button"
 import { Phone, Mail, MessageCircle } from "lucide-react"
 
 // Contact information
-const PHONE_LINK = "905488574996"
+const PHONE_LINK = "905013543732"
 
 interface CTAButtonsProps {
   variant?: "inline" | "stacked"

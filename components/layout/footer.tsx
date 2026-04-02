@@ -3,8 +3,8 @@ import Image from "next/image"
 import { Mail, Phone, MapPin, Send } from "lucide-react"
 
 // Contact information
-const PHONE = "+90 548 857 49 96"
-const PHONE_LINK = "905488574996"
+const PHONE = "+90 501 354 37 32"
+const PHONE_LINK = "905013543732"
 const TELEGRAM = "https://t.me/nubaramedical"
 const INSTAGRAM = "https://www.instagram.com/nubaramedical"
 

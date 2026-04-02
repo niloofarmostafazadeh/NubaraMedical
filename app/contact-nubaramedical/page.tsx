@@ -17,7 +17,7 @@ const contactMethods = [
     title: "WhatsApp",
     description: "Fastest response - usually within 30 minutes",
     action: "Start Chat",
-    href: "https://wa.me/447888888888",
+    href: "https://wa.me/905013543732",
     highlight: true,
   },
   {
@@ -32,8 +32,8 @@ const contactMethods = [
     icon: Phone,
     title: "Phone",
     description: "Speak directly with our team",
-    action: "+44 788 888 8888",
-    href: "tel:+447888888888",
+    action: "+90 501 354 37 32",
+    href: "tel:+905013543732",
     highlight: false,
   },
 ]
