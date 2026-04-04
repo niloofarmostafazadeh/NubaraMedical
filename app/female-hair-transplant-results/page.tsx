@@ -27,7 +27,7 @@ const results = {
       title: "Temple Point Restoration",
       description: "Natural temple point reconstruction with soft, feminine hairline design.",
       beforeImage: "/images/hairline-2-before.jpg",
-      afterImage: "/images/hairline-2-after.jpg",
+      afterImage: "/images/hairline--after.jpg",
       technique: "DHI" as const,
       grafts: 1800,
       timeframe: "10 months",
