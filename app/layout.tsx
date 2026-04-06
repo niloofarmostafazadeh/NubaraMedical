@@ -5,7 +5,7 @@ import { Header } from '@/components/layout/header'
 import { Footer } from '@/components/layout/footer'
 import { FloatingCTA } from '@/components/cta-buttons'
 import './globals.css'
-
+import { SpeedInsights } from "@vercel/speed-insights/next"
 const playfair = Playfair_Display({ 
   subsets: ['latin'],
   variable: '--font-serif',
