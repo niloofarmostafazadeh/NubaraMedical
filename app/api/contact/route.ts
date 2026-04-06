@@ -1,6 +1,6 @@
 import { Resend } from 'resend';
 
-const resend = new Resend(process.env.re_6y37ukjq_7Ksv9uBmBdmuZaK415brHiWp);
+const resend = new Resend(process.env.RESEND_API_KEY);
 
 export async function POST(req: Request) {
   const body = await req.json();
@@ -9,7 +9,7 @@ export async function POST(req: Request) {
 
   try {
     await resend.emails.send({
-      from: 'onboarding@resend.dev',
+      from: 'onboarding@nubaramediacal.com',
       to: 'info@nubaramediacal.com',
       subject: 'New Consultation Request',
       html: `

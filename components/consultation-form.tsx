@@ -46,7 +46,7 @@ export function ConsultationForm({
 }: ConsultationFormProps) {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [isSubmitted, setIsSubmitted] = useState(false)
-
+const [country, setCountry] = useState("");
   // async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
   //   e.preventDefault()
   //   setIsSubmitting(true)
@@ -67,7 +67,7 @@ export function ConsultationForm({
     name: formData.get("name"),
     email: formData.get("email"),
     phone: formData.get("phone"),
-    country: formData.get("country"),
+    country:country,
     message: formData.get("message"),
   };
 
@@ -148,7 +148,7 @@ export function ConsultationForm({
             </div>
             <div className="space-y-2">
               <Label htmlFor="country">Country</Label>
-              <Select name="country" required>
+              <Select name="country" onValueChange={setCountry} required>
                 <SelectTrigger id="country">
                   <SelectValue placeholder="Select country" />
                 </SelectTrigger>
