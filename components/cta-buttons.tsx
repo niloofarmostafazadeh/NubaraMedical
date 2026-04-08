@@ -14,7 +14,7 @@ interface CTAButtonsProps {
 
 export function CTAButtons({ variant = "inline", size = "default", className = "" }: CTAButtonsProps) {
   const buttonSize = size === "lg" ? "lg" : "default"
-  
+
   if (variant === "stacked") {
     return (
       <div className={`flex flex-col gap-3 ${className}`}>
@@ -28,7 +28,7 @@ export function CTAButtons({ variant = "inline", size = "default", className = "
             WhatsApp Consultation
           </a>
         </Button>
-        <Button asChild variant="outline" size={buttonSize} className="w-full">
+        <Button asChild variant="outline" size={buttonSize} className="w-full bg-transparent">
           <a href="mailto:info@nubaramedical.com">
             <Mail className="mr-2 h-4 w-4" />
             Email Us
@@ -50,7 +50,7 @@ export function CTAButtons({ variant = "inline", size = "default", className = "
           WhatsApp Consultation
         </a>
       </Button>
-      <Button asChild variant="outline" size={buttonSize}>
+      <Button asChild variant="outline" className="bg-transparent" size={buttonSize}>
         <a href="mailto:info@nubaramedical.com">
           <Mail className="mr-2 h-4 w-4" />
           Email Us
