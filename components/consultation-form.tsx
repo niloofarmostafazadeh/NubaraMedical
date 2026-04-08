@@ -46,17 +46,51 @@ export function ConsultationForm({
 }: ConsultationFormProps) {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [isSubmitted, setIsSubmitted] = useState(false)
-
+const [country, setCountry] = useState("");
+  // async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+  //   e.preventDefault()
+  //   setIsSubmitting(true)
+    
+  //   // Simulate form submission
+  //   await new Promise((resolve) => setTimeout(resolve, 1500))
+    
+  //   setIsSubmitting(false)
+  //   setIsSubmitted(true)
+  // }
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
-    e.preventDefault()
-    setIsSubmitting(true)
-    
-    // Simulate form submission
-    await new Promise((resolve) => setTimeout(resolve, 1500))
-    
-    setIsSubmitting(false)
-    setIsSubmitted(true)
+  e.preventDefault();
+  setIsSubmitting(true);
+
+  const formData = new FormData(e.currentTarget);
+
+  const data = {
+    name: formData.get("name"),
+    email: formData.get("email"),
+    phone: formData.get("phone"),
+    country:country,
+    message: formData.get("message"),
+  };
+
+  try {
+    const res = await fetch("/api/contact", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(data),
+    });
+
+    if (res.ok) {
+      setIsSubmitted(true);
+    } else {
+      alert("Error sending request");
+    }
+  } catch (err) {
+    alert("Something went wrong");
   }
+
+  setIsSubmitting(false);
+}
 
   if (isSubmitted) {
     return (
@@ -114,7 +148,7 @@ export function ConsultationForm({
             </div>
             <div className="space-y-2">
               <Label htmlFor="country">Country</Label>
-              <Select name="country" required>
+              <Select name="country" onValueChange={setCountry} required>
                 <SelectTrigger id="country">
                   <SelectValue placeholder="Select country" />
                 </SelectTrigger>
