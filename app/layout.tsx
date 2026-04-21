@@ -75,6 +75,7 @@ export default function RootLayout({
         <Footer />
         <FloatingCTA />
         <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   )
